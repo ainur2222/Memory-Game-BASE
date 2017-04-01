@@ -21,19 +21,35 @@ class ViewController: UIViewController {
     }
 
     
+    @IBOutlet weak var pic0: UIImageView!
     
+    @IBOutlet weak var pic1: UIImageView!
+    @IBOutlet weak var pic2: UIImageView!
+    @IBOutlet weak var pic3: UIImageView!
+    @IBOutlet weak var pic4: UIImageView!
     
+    @IBAction func restartButton(_ sender: Any) {
+    }
+
+
     
-    
-    @IBOutlet weak var somePicture: UIImageView!
-    
-    
+//    var holdInMemoryInitialState = [String] = ["pic3.image"]
     
     
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         
+        pic1.image = pic0.image
+        
+        print(sender.currentTitle!)
+
+        
+        
+        print(  ("pic\(sender.currentTitle!)")   )
+        
+        
     }
+    
     
     
     
