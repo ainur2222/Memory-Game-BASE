@@ -12,6 +12,8 @@
 		F3EC04001E90486F0018D482 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3EC03FE1E90486F0018D482 /* Main.storyboard */; };
 		F3EC04021E90486F0018D482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3EC04011E90486F0018D482 /* Assets.xcassets */; };
 		F3EC04051E90486F0018D482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3EC04031E90486F0018D482 /* LaunchScreen.storyboard */; };
+		F3EC040E1E9049E20018D482 /* 200 1.png in Resources */ = {isa = PBXBuildFile; fileRef = F3EC040C1E9049E20018D482 /* 200 1.png */; };
+		F3EC040F1E9049E20018D482 /* 200.png in Resources */ = {isa = PBXBuildFile; fileRef = F3EC040D1E9049E20018D482 /* 200.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		F3EC04011E90486F0018D482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3EC04041E90486F0018D482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3EC04061E90486F0018D482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3EC040C1E9049E20018D482 /* 200 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "200 1.png"; sourceTree = "<group>"; };
+		F3EC040D1E9049E20018D482 /* 200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 200.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				F3EC04011E90486F0018D482 /* Assets.xcassets */,
 				F3EC04031E90486F0018D482 /* LaunchScreen.storyboard */,
 				F3EC04061E90486F0018D482 /* Info.plist */,
+				F3EC040C1E9049E20018D482 /* 200 1.png */,
+				F3EC040D1E9049E20018D482 /* 200.png */,
 			);
 			path = "Memory Game";
 			sourceTree = "<group>";
@@ -126,7 +132,9 @@
 			files = (
 				F3EC04051E90486F0018D482 /* LaunchScreen.storyboard in Resources */,
 				F3EC04021E90486F0018D482 /* Assets.xcassets in Resources */,
+				F3EC040F1E9049E20018D482 /* 200.png in Resources */,
 				F3EC04001E90486F0018D482 /* Main.storyboard in Resources */,
+				F3EC040E1E9049E20018D482 /* 200 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
