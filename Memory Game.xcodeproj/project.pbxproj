@@ -10,6 +10,15 @@
 		F31CE5E31E90E2F100B163E4 /* ViewControllerSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31CE5E21E90E2F100B163E4 /* ViewControllerSecond.swift */; };
 		F31CE5E51E90F11600B163E4 /* success.png in Resources */ = {isa = PBXBuildFile; fileRef = F31CE5E41E90F11600B163E4 /* success.png */; };
 		F36FD66F1E914CA5007969C1 /* ViewController8images.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FD66E1E914CA5007969C1 /* ViewController8images.swift */; };
+		F3958A121E91538B00D1FF5A /* 00.ico in Resources */ = {isa = PBXBuildFile; fileRef = F3958A091E91538B00D1FF5A /* 00.ico */; };
+		F3958A131E91538B00D1FF5A /* 01.png in Resources */ = {isa = PBXBuildFile; fileRef = F3958A0A1E91538B00D1FF5A /* 01.png */; };
+		F3958A141E91538B00D1FF5A /* 02.png in Resources */ = {isa = PBXBuildFile; fileRef = F3958A0B1E91538B00D1FF5A /* 02.png */; };
+		F3958A151E91538B00D1FF5A /* 03.png in Resources */ = {isa = PBXBuildFile; fileRef = F3958A0C1E91538B00D1FF5A /* 03.png */; };
+		F3958A161E91538B00D1FF5A /* 04.png in Resources */ = {isa = PBXBuildFile; fileRef = F3958A0D1E91538B00D1FF5A /* 04.png */; };
+		F3958A171E91538B00D1FF5A /* 05.png in Resources */ = {isa = PBXBuildFile; fileRef = F3958A0E1E91538B00D1FF5A /* 05.png */; };
+		F3958A181E91538B00D1FF5A /* 06.png in Resources */ = {isa = PBXBuildFile; fileRef = F3958A0F1E91538B00D1FF5A /* 06.png */; };
+		F3958A191E91538B00D1FF5A /* 07.png in Resources */ = {isa = PBXBuildFile; fileRef = F3958A101E91538B00D1FF5A /* 07.png */; };
+		F3958A1A1E91538B00D1FF5A /* 08.png in Resources */ = {isa = PBXBuildFile; fileRef = F3958A111E91538B00D1FF5A /* 08.png */; };
 		F3EC03FB1E90486F0018D482 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EC03FA1E90486F0018D482 /* AppDelegate.swift */; };
 		F3EC03FD1E90486F0018D482 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EC03FC1E90486F0018D482 /* ViewController.swift */; };
 		F3EC04001E90486F0018D482 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3EC03FE1E90486F0018D482 /* Main.storyboard */; };
@@ -24,6 +33,15 @@
 		F31CE5E21E90E2F100B163E4 /* ViewControllerSecond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSecond.swift; sourceTree = "<group>"; };
 		F31CE5E41E90F11600B163E4 /* success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = success.png; sourceTree = "<group>"; };
 		F36FD66E1E914CA5007969C1 /* ViewController8images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController8images.swift; sourceTree = "<group>"; };
+		F3958A091E91538B00D1FF5A /* 00.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = 00.ico; sourceTree = "<group>"; };
+		F3958A0A1E91538B00D1FF5A /* 01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01.png; sourceTree = "<group>"; };
+		F3958A0B1E91538B00D1FF5A /* 02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02.png; sourceTree = "<group>"; };
+		F3958A0C1E91538B00D1FF5A /* 03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 03.png; sourceTree = "<group>"; };
+		F3958A0D1E91538B00D1FF5A /* 04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 04.png; sourceTree = "<group>"; };
+		F3958A0E1E91538B00D1FF5A /* 05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 05.png; sourceTree = "<group>"; };
+		F3958A0F1E91538B00D1FF5A /* 06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 06.png; sourceTree = "<group>"; };
+		F3958A101E91538B00D1FF5A /* 07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 07.png; sourceTree = "<group>"; };
+		F3958A111E91538B00D1FF5A /* 08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 08.png; sourceTree = "<group>"; };
 		F3EC03F71E90486F0018D482 /* Memory Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Memory Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3EC03FA1E90486F0018D482 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3EC03FC1E90486F0018D482 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +95,15 @@
 				F3EC040C1E9049E20018D482 /* 200 1.png */,
 				F3EC040D1E9049E20018D482 /* 200.png */,
 				F3EC04101E904C1E0018D482 /* 2004.ico */,
+				F3958A091E91538B00D1FF5A /* 00.ico */,
+				F3958A0A1E91538B00D1FF5A /* 01.png */,
+				F3958A0B1E91538B00D1FF5A /* 02.png */,
+				F3958A0C1E91538B00D1FF5A /* 03.png */,
+				F3958A0D1E91538B00D1FF5A /* 04.png */,
+				F3958A0E1E91538B00D1FF5A /* 05.png */,
+				F3958A0F1E91538B00D1FF5A /* 06.png */,
+				F3958A101E91538B00D1FF5A /* 07.png */,
+				F3958A111E91538B00D1FF5A /* 08.png */,
 				F31CE5E41E90F11600B163E4 /* success.png */,
 			);
 			path = "Memory Game";
@@ -142,13 +169,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3958A191E91538B00D1FF5A /* 07.png in Resources */,
+				F3958A1A1E91538B00D1FF5A /* 08.png in Resources */,
+				F3958A171E91538B00D1FF5A /* 05.png in Resources */,
+				F3958A131E91538B00D1FF5A /* 01.png in Resources */,
 				F3EC04051E90486F0018D482 /* LaunchScreen.storyboard in Resources */,
 				F31CE5E51E90F11600B163E4 /* success.png in Resources */,
 				F3EC04021E90486F0018D482 /* Assets.xcassets in Resources */,
+				F3958A181E91538B00D1FF5A /* 06.png in Resources */,
 				F3EC040F1E9049E20018D482 /* 200.png in Resources */,
+				F3958A141E91538B00D1FF5A /* 02.png in Resources */,
+				F3958A151E91538B00D1FF5A /* 03.png in Resources */,
 				F3EC04111E904C1E0018D482 /* 2004.ico in Resources */,
 				F3EC04001E90486F0018D482 /* Main.storyboard in Resources */,
+				F3958A161E91538B00D1FF5A /* 04.png in Resources */,
 				F3EC040E1E9049E20018D482 /* 200 1.png in Resources */,
+				F3958A121E91538B00D1FF5A /* 00.ico in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

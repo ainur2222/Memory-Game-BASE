@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var pic2: UIImageView!
     @IBOutlet weak var pic3: UIImageView!
     
-    lazy var allImages: [UIImageView] = [self.pic0, self.pic1, self.pic2, self.pic3]
+//    lazy var allImages: [UIImageView] = [self.pic0, self.pic1, self.pic2, self.pic3]
     
     
     

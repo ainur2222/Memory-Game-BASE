@@ -158,10 +158,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imageView:5Tm-8y-VqA:image" translatesAutoresizingMaskIntoConstraints="NO" id="5Tm-8y-VqA">
-                                <rect key="frame" x="8" y="28" width="70" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imageView:fXQ-GV-cju:image" translatesAutoresizingMaskIntoConstraints="NO" id="fXQ-GV-cju">
                                 <rect key="frame" x="86" y="28" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -302,6 +298,50 @@
                                     <action selector="buttonPressed:" destination="vEI-j0-fRQ" eventType="touchUpInside" id="YCu-ro-XKC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byg-JB-eww">
+                                <rect key="frame" x="164" y="430" width="70" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.2377386356" green="0.55057201300000003" blue="0.79049951419999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="14"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6CY-yJ-Wef"/>
+                                    <action selector="buttonPressed:" destination="vEI-j0-fRQ" eventType="touchUpInside" id="O42-ZA-fv4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqW-G3-GAE">
+                                <rect key="frame" x="86" y="430" width="70" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.2377386356" green="0.55057201300000003" blue="0.79049951419999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="13"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vEI-j0-fRQ" eventType="touchUpInside" id="S2w-o5-rkD"/>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t6h-6f-mtf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibg-b2-K2d">
+                                <rect key="frame" x="242" y="430" width="70" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.2377386356" green="0.55057201300000003" blue="0.79049951419999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="15"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vEI-j0-fRQ" eventType="touchUpInside" id="Eva-3o-OQA"/>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zhn-ac-MjF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZI-CQ-dgF">
+                                <rect key="frame" x="8" y="430" width="70" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.2377386356" green="0.55057201300000003" blue="0.79049951419999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="12"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N0q-dw-HU5"/>
+                                    <action selector="buttonPressed:" destination="vEI-j0-fRQ" eventType="touchUpInside" id="uBu-TM-OsA"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imageView:7jK-oq-a5z:image" translatesAutoresizingMaskIntoConstraints="NO" id="7jK-oq-a5z">
                                 <rect key="frame" x="164" y="28" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -354,61 +394,46 @@
                                 <rect key="frame" x="164" y="352" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byg-JB-eww">
-                                <rect key="frame" x="164" y="430" width="70" height="22"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJa-Oh-ep3">
+                                <rect key="frame" x="16" y="518" width="65" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.2377386356" green="0.55057201300000003" blue="0.79049951419999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
-                                <state key="normal" title="14"/>
+                                <color key="backgroundColor" red="0.79049951419999998" green="0.79049951419999998" blue="0.79049951419999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="RESTART"/>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6CY-yJ-Wef"/>
-                                    <action selector="buttonPressed:" destination="vEI-j0-fRQ" eventType="touchUpInside" id="O42-ZA-fv4"/>
+                                    <action selector="restartButton" destination="vEI-j0-fRQ" eventType="touchUpInside" id="k2U-H7-ZZU"/>
+                                    <action selector="restartButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="nIV-NR-gf0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqW-G3-GAE">
-                                <rect key="frame" x="86" y="430" width="70" height="22"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imageView:5Tm-8y-VqA:image" translatesAutoresizingMaskIntoConstraints="NO" id="5Tm-8y-VqA">
+                                <rect key="frame" x="13" y="28" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.2377386356" green="0.55057201300000003" blue="0.79049951419999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
-                                <state key="normal" title="13"/>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="vEI-j0-fRQ" eventType="touchUpInside" id="S2w-o5-rkD"/>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t6h-6f-mtf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibg-b2-K2d">
-                                <rect key="frame" x="242" y="430" width="70" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.2377386356" green="0.55057201300000003" blue="0.79049951419999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
-                                <state key="normal" title="15"/>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="vEI-j0-fRQ" eventType="touchUpInside" id="Eva-3o-OQA"/>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zhn-ac-MjF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZI-CQ-dgF">
-                                <rect key="frame" x="8" y="430" width="70" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.2377386356" green="0.55057201300000003" blue="0.79049951419999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
-                                <state key="normal" title="12"/>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N0q-dw-HU5"/>
-                                    <action selector="buttonPressed:" destination="vEI-j0-fRQ" eventType="touchUpInside" id="uBu-TM-OsA"/>
-                                </connections>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="QxG-Xn-IQB"/>
                     <connections>
-                        <outlet property="buttonPressed2" destination="Z6N-zX-ExL" id="gzU-Ad-xHZ"/>
+                        <outlet property="pic0" destination="5Tm-8y-VqA" id="lRt-hq-V3m"/>
+                        <outlet property="pic1" destination="fXQ-GV-cju" id="QBa-Ob-8nB"/>
+                        <outlet property="pic10" destination="roW-8G-K6k" id="hnJ-FF-cmG"/>
+                        <outlet property="pic11" destination="MyN-7a-dsi" id="JCr-c7-mKw"/>
+                        <outlet property="pic12" destination="N6x-0t-i6d" id="ujX-6f-KVi"/>
+                        <outlet property="pic13" destination="ZCT-YG-3xE" id="sIR-Nr-a9f"/>
+                        <outlet property="pic14" destination="6nn-43-9eo" id="a2Y-FT-Hta"/>
+                        <outlet property="pic15" destination="g3e-Jn-PPS" id="sfB-vN-PV3"/>
+                        <outlet property="pic2" destination="7jK-oq-a5z" id="BuH-yf-5vb"/>
+                        <outlet property="pic3" destination="u51-5g-dnJ" id="4hh-PQ-4gM"/>
+                        <outlet property="pic4" destination="by5-nN-j5I" id="oHk-fu-qxk"/>
+                        <outlet property="pic5" destination="35c-or-RAS" id="9hw-au-ERC"/>
+                        <outlet property="pic6" destination="hlg-gP-Qd4" id="f32-6C-WFg"/>
+                        <outlet property="pic7" destination="Q5X-VX-7Ni" id="SQ9-cx-JyM"/>
+                        <outlet property="pic8" destination="gsy-3d-O5V" id="SXs-Ow-hWp"/>
+                        <outlet property="pic9" destination="8sO-NV-hmh" id="FBm-pB-X1J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D1a-gU-rtG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="287" y="547"/>
+            <point key="canvasLocation" x="286.875" y="546.12676056338034"/>
         </scene>
     </scenes>
     <resources>
