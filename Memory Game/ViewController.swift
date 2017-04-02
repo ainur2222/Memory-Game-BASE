@@ -22,6 +22,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    var i1Solved: Bool = false
+    var i2Solved: Bool = false
+    var i3Solved: Bool = false
+    var i4Solved: Bool = false
     
     
     var openCount = 0
@@ -54,54 +58,65 @@ class ViewController: UIViewController {
     
     @IBAction func restartButton() {
         imageArray6 = randomizeArray() as! [UIImage]
-                pic1.image = basicImage
-                pic2.image = basicImage
-                pic3.image = basicImage
-                pic4.image = basicImage
-                openCount = 0
+        pic1.image = basicImage
+        pic2.image = basicImage
+        pic3.image = basicImage
+        pic4.image = basicImage
+        openCount = 0
     }
     
-
-   var firstImageInPair: UIImage = UIImage()
+    var someBool : Bool = false
+   
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         switch openCount {
         case 2...100 :
-            pic1.image = basicImage
-            pic2.image = basicImage
-            pic3.image = basicImage
-            pic4.image = basicImage
-            openCount = 0
-        case 0:
-            switch sender.currentTitle! {
-            case "1":
-                pic1.image = imageArray6[0]
-                openCount += 1
-                firstImageInPair = pic1.image!
-            case "2":
-                pic2.image = imageArray6[1]
-                openCount += 1
-                firstImageInPair = pic2.image!
-            case "3":
-                pic3.image = imageArray6[2]
-                openCount += 1
-                firstImageInPair = pic3.image!
-            case "4":
-                pic4.image = imageArray6[3]
-                openCount += 1
-                firstImageInPair = pic4.image!
+            
+            
+            switch someBool {
+            case (pic1.image == pic2.image && pic1.image != basicImage):
+                 i1Solved = true
+                 i2Solved = true
+            case (pic1.image == pic3.image && pic1.image != basicImage):
+                i1Solved = true
+                i3Solved = true
+            case (pic1.image == pic4.image && pic1.image != basicImage):
+                i1Solved = true
+                i4Solved = true
+            case (pic2.image == pic3.image && pic2.image != basicImage):
+                i2Solved = true
+                i3Solved = true
+            case (pic2.image == pic4.image && pic2.image != basicImage):
+                i2Solved = true
+                i4Solved = true
+            case (pic3.image == pic4.image && pic3.image != basicImage):
+                i3Solved = true
+                i4Solved = true
             default:
                 break
             }
-        case 1:
+
+            
+            
+            if !i1Solved {
+                pic1.image = basicImage
+            }
+            if !i2Solved {
+                pic2.image = basicImage
+            }
+            if !i3Solved {
+                pic3.image = basicImage
+            }
+            if !i4Solved {
+                pic4.image = basicImage
+            }
+            
+            openCount = 0
+        case 0...1:
             switch sender.currentTitle! {
             case "1":
                 pic1.image = imageArray6[0]
                 openCount += 1
-                if firstImageInPair == pic1.image! {
-                    pic1.image = UIImage(named: "success.png")!
-                    
-                }
             case "2":
                 pic2.image = imageArray6[1]
                 openCount += 1
@@ -120,8 +135,12 @@ class ViewController: UIViewController {
     }
     
 
-    
+//    if pic1.image != basicImage {
+//    
+//    }
 
+    
+    
 }
 
 
