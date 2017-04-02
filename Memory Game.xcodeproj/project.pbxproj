@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F31CE5E31E90E2F100B163E4 /* ViewControllerSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31CE5E21E90E2F100B163E4 /* ViewControllerSecond.swift */; };
 		F3EC03FB1E90486F0018D482 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EC03FA1E90486F0018D482 /* AppDelegate.swift */; };
 		F3EC03FD1E90486F0018D482 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EC03FC1E90486F0018D482 /* ViewController.swift */; };
 		F3EC04001E90486F0018D482 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3EC03FE1E90486F0018D482 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F31CE5E21E90E2F100B163E4 /* ViewControllerSecond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSecond.swift; sourceTree = "<group>"; };
 		F3EC03F71E90486F0018D482 /* Memory Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Memory Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3EC03FA1E90486F0018D482 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3EC03FC1E90486F0018D482 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				F3EC03FA1E90486F0018D482 /* AppDelegate.swift */,
 				F3EC03FC1E90486F0018D482 /* ViewController.swift */,
+				F31CE5E21E90E2F100B163E4 /* ViewControllerSecond.swift */,
 				F3EC03FE1E90486F0018D482 /* Main.storyboard */,
 				F3EC04011E90486F0018D482 /* Assets.xcassets */,
 				F3EC04031E90486F0018D482 /* LaunchScreen.storyboard */,
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F31CE5E31E90E2F100B163E4 /* ViewControllerSecond.swift in Sources */,
 				F3EC03FD1E90486F0018D482 /* ViewController.swift in Sources */,
 				F3EC03FB1E90486F0018D482 /* AppDelegate.swift in Sources */,
 			);
@@ -314,6 +318,7 @@
 				F3EC040B1E90486F0018D482 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
