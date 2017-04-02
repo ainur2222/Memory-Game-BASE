@@ -43,11 +43,7 @@ class ViewController: UIViewController {
         UIImage(named: "2004.ico")!
     ]
 
-    
-    
     var successImage:UIImage = UIImage(named: "success.png")!
-    
-    
     
     var i0Solved = false
     var i1Solved = false
