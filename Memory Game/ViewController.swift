@@ -10,139 +10,230 @@ import UIKit
 import GameplayKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         restartButton()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    var i1Solved: Bool = false
-    var i2Solved: Bool = false
-    var i3Solved: Bool = false
-    var i4Solved: Bool = false
     
-    
-    var openCount = 0
     @IBOutlet weak var label1: UILabel!
+    @IBOutlet weak var pic0: UIImageView!
     @IBOutlet weak var pic1: UIImageView!
     @IBOutlet weak var pic2: UIImageView!
     @IBOutlet weak var pic3: UIImageView!
-    @IBOutlet weak var pic4: UIImageView!
     
-    var basicImage:UIImage = UIImage(named: "2004.ico")!
-    var imageArray : [UIImage] = [
+    lazy var allImages: [UIImageView] = [self.pic0, self.pic1, self.pic2, self.pic3]
+    
+    
+    
+    var openCount = 0
+//    var basicImage:UIImage = UIImage(named: "2004.ico")!
+    
+    var basicImage : [UIImage] = [
+        UIImage(named: "2004.ico")!,
+        UIImage(named: "2004.ico")!,
+        UIImage(named: "2004.ico")!,
+        UIImage(named: "2004.ico")!
+    ]
+//    var basicImage0:UIImage = UIImage(named: "success.png")!
+//    var basicImage1:UIImage = UIImage(named: "success.png")!
+//    var basicImage2:UIImage = UIImage(named: "success.png")!
+//    var basicImage3:UIImage = UIImage(named: "success.png")!
+//    var basicImage0:UIImage = UIImage(named: "2004.ico")!
+//    var basicImage1:UIImage = UIImage(named: "2004.ico")!
+//    var basicImage2:UIImage = UIImage(named: "2004.ico")!
+//    var basicImage3:UIImage = UIImage(named: "2004.ico")!
+
+    
+    
+    var successImage:UIImage = UIImage(named: "success.png")!
+    
+    
+    
+    var i0Solved = false
+    var i1Solved = false
+    var i2Solved = false
+    var i3Solved = false
+    
+    
+    var array0 : [UIImage] = [
         UIImage(named: "200.png")!,
         UIImage(named: "200.png")!,
         UIImage(named: "200 1.png")!,
         UIImage(named: "200 1.png")!
     ]
-    
-    
-    
-    
-    var imageArray6: [UIImage] = []
+    var array1: [UIImage] = []     // вот тут наши картинки и мы их не трогаем
     func randomizeArray () -> Any {
-        let imageArray8 = GKRandomSource.sharedRandom().arrayByShufflingObjects( in: self.imageArray )
+        let imageArray8 = GKRandomSource.sharedRandom().arrayByShufflingObjects( in: self.array0 )
         return imageArray8
     }
+    
+    
+    var array3 : [UIImage] = []   // for comparison 2 images
+    var array4 : [Int] = []
+
+
+    
+    
+    
     
     
     
     
     
     @IBAction func restartButton() {
-        imageArray6 = randomizeArray() as! [UIImage]
-        pic1.image = basicImage
-        pic2.image = basicImage
-        pic3.image = basicImage
-        pic4.image = basicImage
+        array1 = randomizeArray() as! [UIImage]
+        basicImage[0] = UIImage(named: "2004.ico")!
+        basicImage[1] = UIImage(named: "2004.ico")!
+        basicImage[2] = UIImage(named: "2004.ico")!
+        basicImage[3] = UIImage(named: "2004.ico")!
+        
+        pic0.image = basicImage[0]
+        pic1.image = basicImage[1]
+        pic2.image = basicImage[2]
+        pic3.image = basicImage[3]
         openCount = 0
+        
     }
     
-    var someBool : Bool = false
-   
+    
+    
     
     @IBAction func buttonPressed(_ sender: UIButton) {
-        switch openCount {
-        case 2...100 :
-            
-            
-            switch someBool {
-            case (pic1.image == pic2.image && pic1.image != basicImage):
-                 i1Solved = true
-                 i2Solved = true
-            case (pic1.image == pic3.image && pic1.image != basicImage):
-                i1Solved = true
-                i3Solved = true
-            case (pic1.image == pic4.image && pic1.image != basicImage):
-                i1Solved = true
-                i4Solved = true
-            case (pic2.image == pic3.image && pic2.image != basicImage):
-                i2Solved = true
-                i3Solved = true
-            case (pic2.image == pic4.image && pic2.image != basicImage):
-                i2Solved = true
-                i4Solved = true
-            case (pic3.image == pic4.image && pic3.image != basicImage):
-                i3Solved = true
-                i4Solved = true
-            default:
-                break
-            }
-
-            
-            
-            if !i1Solved {
-                pic1.image = basicImage
-            }
-            if !i2Solved {
-                pic2.image = basicImage
-            }
-            if !i3Solved {
-                pic3.image = basicImage
-            }
-            if !i4Solved {
-                pic4.image = basicImage
-            }
-            
+        
+        
+        if openCount == 2 {
             openCount = 0
-        case 0...1:
+            array3.removeAll()
+            array4.removeAll()
+            
+            print(openCount)
+            if i0Solved == false {
+                pic0.image = basicImage[0]
+            }
+            if i1Solved == false {
+                pic1.image = basicImage[1]
+            }
+            if i2Solved == false {
+                pic2.image = basicImage[2]
+            }
+            if i3Solved == false {
+                pic3.image = basicImage[3]
+            }
+        }
+        
+        
+        if openCount == 1 || openCount == 0 {
+            openCount += 1
             switch sender.currentTitle! {
+            case "0":
+                pic0.image = array1[Int(sender.currentTitle!)!]
+                array3.append(pic0.image!)
+                array4.append(0)
+                if (array3.count == 2) && (array3[0] == array3[1])  {
+                    print(array4)
+                    array1[array4[0]] = successImage
+                    array1[array4[1]] = successImage
+                    basicImage[array4[0]] = UIImage(named: "success.png")!
+                    basicImage[array4[1]] = UIImage(named: "success.png")!
+                }
             case "1":
-                pic1.image = imageArray6[0]
-                openCount += 1
+                pic1.image = array1[Int(sender.currentTitle!)!]
+                array3.append(pic1.image!)
+                array4.append(1)
+                if (array3.count == 2) && (array3[0] == array3[1])  {
+                    print(array4)
+                    array1[array4[0]] = successImage
+                    array1[array4[1]] = successImage
+                    basicImage[array4[0]] = UIImage(named: "success.png")!
+                    basicImage[array4[1]] = UIImage(named: "success.png")!
+                }
             case "2":
-                pic2.image = imageArray6[1]
-                openCount += 1
+                pic2.image = array1[Int(sender.currentTitle!)!]
+                array3.append(pic2.image!)
+                array4.append(2)
+                if (array3.count == 2) && (array3[0] == array3[1]) {
+                    print(array4)
+                    array1[array4[0]] = successImage
+                    array1[array4[1]] = successImage
+                    basicImage[array4[0]] = UIImage(named: "success.png")!
+                    basicImage[array4[1]] = UIImage(named: "success.png")!
+                }
             case "3":
-                pic3.image = imageArray6[2]
-                openCount += 1
-            case "4":
-                pic4.image = imageArray6[3]
-                openCount += 1
+                pic3.image = array1[Int(sender.currentTitle!)!]
+                array3.append(pic3.image!)
+                array4.append(3)
+                if (array3.count == 2) && (array3[0] == array3[1]) {
+                    print(array4)
+                    array1[array4[0]] = successImage
+                    array1[array4[1]] = successImage
+                    basicImage[array4[0]] = UIImage(named: "success.png")!
+                    basicImage[array4[1]] = UIImage(named: "success.png")!
+                }
             default:
                 break
             }
-        default:
-            break
+
         }
+        
+        
+        
+        
+        
+        
+        
+        
     }
-    
-
-//    if pic1.image != basicImage {
-//    
-//    }
-
-    
     
 }
 
 
 
+
+
+//
+//switch sender.currentTitle! {
+//case "0":
+//    pic0.image = array1[Int(sender.currentTitle!)!]
+//case "1":
+//    pic1.image = array1[Int(sender.currentTitle!)!]
+//case "2":
+//    pic2.image = array1[Int(sender.currentTitle!)!]
+//case "3":
+//    pic3.image = array1[Int(sender.currentTitle!)!]
+//default:
+//break
+
+
+
+
+
+
+//        if openCount == 0 {
+//            switch sender.currentTitle! {
+//            case "0":
+//                pic0.image = array1[Int(sender.currentTitle!)!]
+//                array3.append(pic0.image!)
+//            case "1":
+//                pic1.image = array1[Int(sender.currentTitle!)!]
+//                array3.append(pic1.image!)
+//            case "2":
+//                pic2.image = array1[Int(sender.currentTitle!)!]
+//                array3.append(pic2.image!)
+//            case "3":
+//                pic3.image = array1[Int(sender.currentTitle!)!]
+//                array3.append(pic3.image!)
+//
+//            default:
+//                break
+//            }
+//            openCount += 1
+//        }
 

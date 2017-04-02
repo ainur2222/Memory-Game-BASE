@@ -25,12 +25,7 @@ class ViewControllerSecond: UIViewController {
    
     
     
-    
-//    
-//    @IBAction func startButton() {
-//        ViewController.restartButton(<#T##ViewController#>)
-//    }
-    
+
     
     
     

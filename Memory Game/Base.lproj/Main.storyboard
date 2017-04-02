@@ -56,7 +56,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.2377386356" green="0.55057201300000003" blue="0.79049951419999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
-                                <state key="normal" title="1"/>
+                                <state key="normal" title="0"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Acr-jf-Uoc"/>
                                 </connections>
@@ -65,7 +65,7 @@
                                 <rect key="frame" x="86" y="171" width="70" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.2377386356" green="0.55057201300000003" blue="0.79049951419999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="2"/>
+                                <state key="normal" title="1"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BC7-bd-OmZ"/>
                                 </connections>
@@ -90,7 +90,7 @@
                                 <rect key="frame" x="164" y="171" width="70" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.2377386356" green="0.55057201300000003" blue="0.79049951419999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="3"/>
+                                <state key="normal" title="2"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MZt-KT-nva"/>
                                 </connections>
@@ -99,7 +99,7 @@
                                 <rect key="frame" x="242" y="171" width="70" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.2377386356" green="0.55057201300000003" blue="0.79049951419999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="4"/>
+                                <state key="normal" title="3"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V6r-a7-SWB"/>
                                 </connections>
@@ -126,10 +126,10 @@
                     <navigationItem key="navigationItem" id="q4l-nH-d62"/>
                     <connections>
                         <outlet property="label1" destination="GKl-Fc-vV3" id="1fo-jI-HOm"/>
-                        <outlet property="pic1" destination="283-Fj-UoX" id="OLp-ER-6ML"/>
-                        <outlet property="pic2" destination="aXW-ae-Uhu" id="xRJ-L2-KSt"/>
-                        <outlet property="pic3" destination="S7g-vC-MF4" id="exJ-pd-koQ"/>
-                        <outlet property="pic4" destination="qqo-95-6JB" id="fT9-7J-m3x"/>
+                        <outlet property="pic0" destination="283-Fj-UoX" id="0Fb-m1-DNV"/>
+                        <outlet property="pic1" destination="aXW-ae-Uhu" id="lky-lR-3jL"/>
+                        <outlet property="pic2" destination="S7g-vC-MF4" id="gPY-YZ-162"/>
+                        <outlet property="pic3" destination="qqo-95-6JB" id="FT6-fP-q7X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
