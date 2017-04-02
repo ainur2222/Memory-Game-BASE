@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        restartButton()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -38,11 +39,6 @@ class ViewController: UIViewController {
         UIImage(named: "200 1.png")!
     ]
     
-//    pic1.image = basicImage
-//    pic2.image = basicImage
-//    pic3.image = basicImage
-//    pic4.image = basicImage
-//    openCount = 0
     
     
     
@@ -66,7 +62,7 @@ class ViewController: UIViewController {
     }
     
 
-
+   var firstImageInPair: UIImage = UIImage()
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         switch openCount {
@@ -76,11 +72,36 @@ class ViewController: UIViewController {
             pic3.image = basicImage
             pic4.image = basicImage
             openCount = 0
-        case 0...1 :
+        case 0:
             switch sender.currentTitle! {
             case "1":
                 pic1.image = imageArray6[0]
                 openCount += 1
+                firstImageInPair = pic1.image!
+            case "2":
+                pic2.image = imageArray6[1]
+                openCount += 1
+                firstImageInPair = pic2.image!
+            case "3":
+                pic3.image = imageArray6[2]
+                openCount += 1
+                firstImageInPair = pic3.image!
+            case "4":
+                pic4.image = imageArray6[3]
+                openCount += 1
+                firstImageInPair = pic4.image!
+            default:
+                break
+            }
+        case 1:
+            switch sender.currentTitle! {
+            case "1":
+                pic1.image = imageArray6[0]
+                openCount += 1
+                if firstImageInPair == pic1.image! {
+                    pic1.image = UIImage(named: "success.png")!
+                    
+                }
             case "2":
                 pic2.image = imageArray6[1]
                 openCount += 1
