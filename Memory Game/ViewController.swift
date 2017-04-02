@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     
     
     var openCount = 0
-//    var basicImage:UIImage = UIImage(named: "2004.ico")!
+
     
     var basicImage : [UIImage] = [
         UIImage(named: "2004.ico")!,
@@ -42,14 +42,6 @@ class ViewController: UIViewController {
         UIImage(named: "2004.ico")!,
         UIImage(named: "2004.ico")!
     ]
-//    var basicImage0:UIImage = UIImage(named: "success.png")!
-//    var basicImage1:UIImage = UIImage(named: "success.png")!
-//    var basicImage2:UIImage = UIImage(named: "success.png")!
-//    var basicImage3:UIImage = UIImage(named: "success.png")!
-//    var basicImage0:UIImage = UIImage(named: "2004.ico")!
-//    var basicImage1:UIImage = UIImage(named: "2004.ico")!
-//    var basicImage2:UIImage = UIImage(named: "2004.ico")!
-//    var basicImage3:UIImage = UIImage(named: "2004.ico")!
 
     
     
